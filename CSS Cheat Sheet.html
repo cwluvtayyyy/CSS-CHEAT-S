@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5500/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Cheat Sheet</title>
+    <link rel="stylesheet" href="./CSS Cheat Sheet_files/style.css">
+</head>
+<body>
+    <h1>Adios Amigos</h1>
+    <div class="box-1">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis earum ratione obcaecati ea blanditiis dolorum corrupti deserunt est commodi? Laboriosam cum enim harum est labore expedita, tenetur pariatur dicta deserunt quibusdam facere omnis qui, iure delectus dolores unde laudantium! Commodi.</p>
+        </div>
+        <div class="container">
+            <div class="box-2">
+                <h1>Adios Amigos</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate deserunt repellat cupiditate possimus esse sit id! Fugit, harum dicta. Nam non, aperiam eum quo eius atque ab molestias tempore itaque quam id ad dolorem delectus fugit modi, quaerat commodi aliquam!</p>
+            </div>
+        </div>
+        <div class="catagories">
+            <h2>Catagories</h2><h2>
+                <ul>
+                    <li><a href="http://127.0.0.1:5500/#">Catagory 1</a></li>
+                    <li><a href="http://127.0.0.1:5500/#">Catagory 2</a></li>
+                    <li><a href="http://127.0.0.1:5500/#">Catagory 3</a></li>
+                    <li><a href="http://127.0.0.1:5500/test.html">catagory 4</a></li>
+                </ul>
+            </h2></div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
